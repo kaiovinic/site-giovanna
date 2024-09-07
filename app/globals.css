@@ -3,25 +3,45 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-marcellus: "Marcellus", serif;
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply font-secondary bg-secondary text-base text-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+  .h1 {
+    @apply text-[64px] leading-none xl:text-[72px] xl:leading-[76px];
+  }
+  .h2 {
+    @apply text-[48px] leading-[54px];
+  }
+  .h3 {
+    @apply text-[36px] leading-[48px];
+  }
+  .h4 {
+    @apply text-xl;
+  }
+  .lead {
+    @apply text-lg mb-8;
+  }
+  a {
+    @apply font-primary;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn {
+  @apply bg-accent min-w-[178px] rounded-tl-[30px]  rounded-bl-[30px] rounded-tr-[4px] 
+  rounded-br-[24px] font-primary uppercase tracking-[1px] h-[58px] pl-8 pr-6 flex items-center
+  justify-center text-white;
 }

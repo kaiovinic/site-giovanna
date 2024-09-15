@@ -4,6 +4,8 @@ import "./globals.css";
 // components
 import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
+import Trasition from "@/components/Trasition";
+import PageTransition from "@/components/PageTransition";
 
 const marcellus = Marcellus({
   subsets: ["latin"],
@@ -25,17 +27,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className="h-screen">
-      <header>
+      {/* <header>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo.png" />
-      </header>
+      </header> */}
       <body
         className={`${montserrat.variable} ${marcellus.variable} antialiased`}
         overflow-x-hidden
       >
         <CursorProvider>
+          <Trasition />
           <Header />
-          {children}
+          <PageTransition>{children}</PageTransition>
         </CursorProvider>
       </body>
     </html>

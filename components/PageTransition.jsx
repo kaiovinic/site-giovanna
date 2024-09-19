@@ -11,7 +11,7 @@ const PageTransition = ({ children }) => {
         key={pathname}
         initial={{ opacity: 1 }}
         animate={{ opacity: 0, transition: { delay: 1, ease: "easeIn" } }}
-        className="w-screen h-screen fixed z-40 bg-white top-0 pointer-events-none"
+        className="w-screen h-screen fixed z-30 xl:z-40 bg-white top-0 pointer-events-none"
       />
       {children}
     </AnimatePresence>

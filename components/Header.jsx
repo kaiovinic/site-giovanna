@@ -24,9 +24,9 @@ const Header = () => {
         <div>
           <Link href="/">
             <Image
-              src="/logo.png"
-              width={120}
-              height={120}
+              src="/logo.JPEG"
+              width={170}
+              height={170}
               alt="logo"
               priority
             />

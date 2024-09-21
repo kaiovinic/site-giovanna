@@ -46,22 +46,21 @@ const Header = () => {
               onMouseLeave={mouseleaveHandler}
               className="hidden xl:block"
             >
-              <Socials containerStyles="flex gap-6 text-white" />
+              <Socials containerStyles="flex gap-6 text-white " />
             </motion.div>
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex items-center justify-between px-6">
+      <div className="container  mx-auto flex items-center justify-between px-6">
         {/* logo */}
         <motion.div
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseleaveHandler}
-          className=""
         >
           <Link href="/">
             <Image
-              src="/logo.JPEG"
-              width={150}
+              src="/logo03.png"
+              width={170}
               height={100}
               alt="logo"
               priority

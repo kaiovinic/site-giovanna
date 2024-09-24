@@ -10,7 +10,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
 import Socials from "./Socials";
-import { FaPhone } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             >
               {/* Phone */}
               <div className="flex items-center gap-2 text-white">
-                <FaPhone />
+                <FaPhoneAlt />
                 <span>(71) 981258539</span>
               </div>
               {/* Email */}

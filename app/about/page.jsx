@@ -14,7 +14,7 @@ const About = () => {
       <div className="container mx-auto flex items-center pt-48 pb-12 xl:pt-32 xl:pb-0">
         <div className="flex flex-col xl:flex-row items-center h-full w-full justify-between">
           {/* image */}
-          <div className="relative w-[304px] h-[323px] xl:w-[384px] xl:h-[403px] mb-8 mt-[200px] xl:mx-0">
+          <div className="relative w-[304px] h-[423px] xl:w-[384px] xl:h-[534px] mb-8 mt-[200px] xl:mx-0">
             <Image
               src="/image02.png"
               fill

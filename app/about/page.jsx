@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useContext } from "react";
 import { CursorContext } from "@/components/CursorContext";
+import StartItem from "@/components/StartItem";
 
 const About = () => {
+  const { mouseEnterHandler, mouseleaveHandler } = useContext(CursorContext);
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -14,7 +16,7 @@ const About = () => {
       <div className="container mx-auto flex items-center pt-48 pb-12 xl:pt-32 xl:pb-0">
         <div className="flex flex-col xl:flex-row items-center h-full w-full justify-between">
           {/* image */}
-          <div className="relative w-[304px] h-[423px] xl:w-[384px] xl:h-[534px] mb-8 mt-[200px] xl:mx-0">
+          <motion.div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseleaveHandler} initial={{ opacity: 0, x: -60 }} animate={{ opacity: 1, x: 0, transition: { delay: 2, duration: 0.8, ease: "easeInOut" } }} className="relative w-[304px] h-[423px] xl:w-[384px] xl:h-[534px] mb-8 mt-[200px] xl:mx-0">
             <Image
               src="/image02.png"
               fill
@@ -23,9 +25,9 @@ const About = () => {
               alt="image"
               className="object-contain"
             />
-          </div>
+          </motion.div>
           {/* text */}
-          <div className="flex flex-col items-start xl:max-w-[650px] text-center xl:text-left mx-auto xl:mx-0">
+          <motion.div onMouseEnter={mouseEnterHandler} onMouseLeave={mouseleaveHandler} initial={{ opacity: 0, x: 60 }} animate={{ opacity: 1, x: 0, transition: { delay: 2.4, duration: 0.8, ease: "easeInOut" } }} className="flex flex-col items-start xl:max-w-[650px] text-center xl:text-left mx-auto xl:mx-0">
             <h2 className="h2 mb-6 mx-auto max-w-[540px] xl:max-w-none">
               Comprometida com a saúde e beleza da sua pele.
             </h2>
@@ -36,12 +38,14 @@ const About = () => {
             </p>
             {/* items */}
             <div className="grid grid-cols-3 gap-[30px] mb-14 mx-auto xl:mx-0">
-              <div>item 1</div>
-              <div>item 2</div>
-              <div>item 3</div>
-              <div>item 4</div>
+              <div><StartItem countNum={4} text={"Anos no Mercado"}/></div>
+              <div><StartItem countNum={1} countText={"K+"} text={"Clientes Satisfeitos!" }/></div>
+              <div><StartItem countNum={97} countText={"%"} text={"Produtos Naturais" }/></div>
+              
             </div>
-          </div>
+            {/* button */}
+            <button className="btn mx-auto xl:mx-0">Contate-me</button>
+          </motion.div>
         </div>
       </div>
     </motion.section>

@@ -46,7 +46,13 @@ const Home = () => {
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseleaveHandler}
               >
-                Marcar uma Consulta
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5571981258539&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Marcar uma Consulta
+                </a>
               </motion.button>
               <motion.div
                 onMouseEnter={mouseEnterHandler}

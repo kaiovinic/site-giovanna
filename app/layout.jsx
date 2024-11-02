@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import CursorProvider from "@/components/CursorContext";
 import Trasition from "@/components/Trasition";
 import PageTransition from "@/components/PageTransition";
+import Footer from "@/components/Footer";
 
 const marcellus = Marcellus({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
           <Trasition />
           <Header />
           <PageTransition>{children}</PageTransition>
+          <Footer />
         </CursorProvider>
       </body>
     </html>

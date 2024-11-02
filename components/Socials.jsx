@@ -14,7 +14,7 @@ const Socials = ({ containerStyles }) => {
         </Link>
       </li>
 
-      <li>
+      {/* <li>
         <Link
           href="https://www.facebook.com/profile.php?id=61554987855728&mibextid=LQQJ4d"
           target="_blank"
@@ -22,9 +22,9 @@ const Socials = ({ containerStyles }) => {
         >
           <FaFacebook />
         </Link>
-      </li>
+      </li> */}
 
-      <li>
+      {/* <li>
         <Link
           href="https://www.tiktok.com/@giovannaleite.estetica?_t=8pq5Cn4Vx5x&_r=1"
           target="_blank"
@@ -32,7 +32,7 @@ const Socials = ({ containerStyles }) => {
         >
           <FaTiktok />
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 };

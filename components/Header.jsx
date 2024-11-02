@@ -31,7 +31,7 @@ const Header = () => {
               {/* Phone */}
               <div className="flex items-center gap-2 text-white">
                 <FaPhoneAlt />
-                <span>(71) 981258539</span>
+                <span>(71) 98125-8539</span>
               </div>
               {/* Email */}
               <div className="flex items-center gap-2 text-white">

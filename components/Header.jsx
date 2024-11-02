@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="pb-6 xl:pb-[50px] fixed z-40 w-full bg-accent-100 xl:bg-transparent">
       {/* topbar */}
-      <div className="bg-secondary-100 mb-6 xl:mb-[50px] xl:h-[50px] py-4 xl:py-0">
+      <div className="bg-secondary-100 mb-4 xl:mb-[30px] xl:h-[50px] py-4 xl:py-0">
         <div className=" container mx-auto h-full">
           <div className="flex items-center justify-between h-full">
             {/* Phone & Email */}

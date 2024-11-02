@@ -73,7 +73,8 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseleaveHandler}
-              className="hidden xl:flex fixed bottom-0"
+              className="hidden xl:flex fixed bottom-0 right-0 
+               "
             >
               <Image
                 src="/imagem.png"

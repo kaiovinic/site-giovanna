@@ -60,7 +60,7 @@ const Header = () => {
           <Link href="/">
             <Image
               src="/logo03.png"
-              width={120}
+              width={100}
               height={50}
               alt="logo"
               priority

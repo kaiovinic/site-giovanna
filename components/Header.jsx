@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="container  mx-auto flex items-center justify-between px-6">
+      <div className="container  mx-auto flex items-start justify-between px-6">
         {/* logo */}
         <motion.div
           onMouseEnter={mouseEnterHandler}
@@ -60,8 +60,8 @@ const Header = () => {
           <Link href="/">
             <Image
               src="/logo03.png"
-              width={170}
-              height={100}
+              width={150}
+              height={50}
               alt="logo"
               priority
             />

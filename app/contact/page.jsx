@@ -95,7 +95,7 @@ const Contact = () => {
             }}
             className="flex-1"
           >
-            <div className="bg-[#f0cfbc] w-full max-w-[580px] gap-4 p-10 mx-auto xl:mx-0">
+            <div className="bg-[#f0cfbc] w-full max-w-[580px] gap-4 p-10 mx-auto xl:mx-0 mb-10">
               <h3 className="h3 mb-8 text-center">Entre em contato</h3>
               <Form />
             </div>

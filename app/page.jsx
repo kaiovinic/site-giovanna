@@ -11,7 +11,7 @@ const Home = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
-      className="min-h-screen flex items-center overflow-x-hidden pt-10"
+      className="min-h-screen flex items-center overflow-x-hidden "
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center h-full">
@@ -23,7 +23,7 @@ const Home = () => {
               y: 0,
               transition: { delay: 2, duration: 1, esse: "easeInOut" },
             }}
-            className="w-full text-center xl:text-left xl:w-[500px] pt-[120px]"
+            className="w-full text-center xl:text-left xl:w-[500px] "
           >
             <motion.h1
               onMouseEnter={mouseEnterHandler}

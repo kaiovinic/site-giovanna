@@ -25,7 +25,7 @@ const About = () => {
               x: 0,
               transition: { delay: 2, duration: 0.8, ease: "easeInOut" },
             }}
-            className="relative w-[304px] h-[423px] xl:w-[384px] xl:h-[534px] mb-8 mt-[200px] xl:mx-0"
+            className="relative w-[304px] h-[423px] xl:w-[384px] xl:h-[534px] mb-8  xl:mx-0"
           >
             <Image
               src="/image02.png"

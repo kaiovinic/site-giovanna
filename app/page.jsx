@@ -63,7 +63,7 @@ const Home = () => {
             </div>
           </motion.div>
           {/* image */}
-          <div className="flex-1">
+          <div className="flex-1 ">
             <motion.div
               initial={{ opacity: 0, bottom: "-100%" }}
               animate={{
@@ -73,7 +73,7 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseleaveHandler}
-              className="hidden xl:flex fixed bottom-0 right-0 
+              className="hidden xl:flex fixed bottom-0 right-0 h-[80%]
                "
             >
               <Image

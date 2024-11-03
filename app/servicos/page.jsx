@@ -90,7 +90,13 @@ const Services = () => {
               {/* fim item */}
             </div>
             {/* btn */}
-            <button className="btn mx-auto xl:mx-0">Descubra mais</button>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5571981258539&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn mx-auto xl:mx-0">Descubra mais</button>
+            </a>
           </motion.div>
           {/* image */}
           <motion.div

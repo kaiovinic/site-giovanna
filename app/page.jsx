@@ -11,7 +11,7 @@ const Home = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
-      className="min-h-screen flex items-center overflow-x-hidden"
+      className="min-h-screen flex items-center overflow-x-hidden pt-10"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center h-full">
@@ -73,7 +73,7 @@ const Home = () => {
               }}
               onMouseEnter={mouseEnterHandler}
               onMouseLeave={mouseleaveHandler}
-              className="hidden xl:flex fixed bottom-0 right-0 h-[80%]
+              className="hidden xl:flex fixed bottom-0 right-0 h-[80%] 
                "
             >
               <Image

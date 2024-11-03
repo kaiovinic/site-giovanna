@@ -30,7 +30,7 @@ const Contact = () => {
             }}
             className="flex-1 flex flex-col justify-center "
           >
-            <h3 className="h3 mb-8 text-center xl:text-left">
+            <h3 className="h3 mb-8 text-center text-left">
               Contato para informações
             </h3>
             {/* items */}

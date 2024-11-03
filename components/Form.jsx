@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -16,14 +17,34 @@ const Form = () => {
     e.preventDefault();
 
     const { name, email, phone, message } = formData;
-    const whatsappNumber = "5571981258539"; // Número do WhatsApp no formato internacional
+    const whatsappNumber = "5571981258539";
     const textMessage = `Olá! Meu nome é ${name}. Meu email é ${email}, telefone: ${phone}. Mensagem: ${message}`;
-
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       textMessage
     )}`;
 
-    window.open(whatsappUrl, "_blank"); // Abre o WhatsApp em uma nova aba
+    // Abre o WhatsApp com a mensagem
+    window.open(whatsappUrl, "_blank");
+
+    // Envia um e-mail com os dados do formulário (opcional)
+    emailjs
+      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
+      .then(
+        (result) => {
+          alert("Mensagem enviada por e-mail e WhatsApp!");
+        },
+        (error) => {
+          alert("Erro ao enviar o e-mail.");
+        }
+      );
+
+    // Limpa os campos do formulário
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   return (

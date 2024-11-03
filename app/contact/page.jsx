@@ -30,11 +30,11 @@ const Contact = () => {
             }}
             className="flex-1 flex flex-col justify-center "
           >
-            <h3 className="h3 mb-8 text-center text-left">
+            <h3 className="h3 mb-8 text-center xl:text-left">
               Contato para informações
             </h3>
             {/* items */}
-            <div className="flex flex-col gap-12 items-center xl:items-start">
+            <div className="flex flex-col gap-12  items-start">
               {/* item */}
               <div className="flex items-start gap-4">
                 {/* icon */}

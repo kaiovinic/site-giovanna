@@ -1,12 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, phone, message } = formData;
+    const whatsappNumber = "5571981258539"; // Número do WhatsApp no formato internacional
+    const textMessage = `Olá! Meu nome é ${name}. Meu email é ${email}, telefone: ${phone}. Mensagem: ${message}`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      textMessage
+    )}`;
+
+    window.open(whatsappUrl, "_blank"); // Abre o WhatsApp em uma nova aba
+  };
+
   return (
-    <form className="flex flex-col gap-4">
-      <input type="text" placeholder="Nome" className="input" />
-      <input type="email" placeholder="Email" className="input" />
-      <input type="text" placeholder="Telefone" className="input" />
-      <textarea placeholder="Mensagem" className="textarea mb-2" />
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <input
+        type="text"
+        placeholder="Nome"
+        className="input"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        className="input"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        placeholder="Telefone"
+        className="input"
+        name="phone"
+        value={formData.phone}
+        onChange={handleChange}
+        required
+      />
+      <textarea
+        placeholder="Mensagem"
+        className="textarea mb-2"
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        required
+      />
       <button type="submit" className="btn self-start">
         Enviar
       </button>

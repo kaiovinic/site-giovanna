@@ -17,7 +17,7 @@ const Footer = () => {
               onMouseLeave={mouseleaveHandler}
               className="flex flex-col lg:flex-row items-center gap-2 h-full xl:gap-6 w-full justify-center xl:w-auto xl:justify-normal"
             >
-              <div className="text-[16px] text-white   mb-[2rem] md:mb-0">
+              <div className="text-[16px] max-sm:text-[12px] text-white   mb-[2rem] md:mb-0">
                 <p>
                   &copy; {new Date().getFullYear()}{" "}
                   <a

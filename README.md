@@ -15,15 +15,15 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,nextjs,npm,git,html,css,tailwind" />
+    <img src="https://skillicons.dev/icons?i=js,nextjs,nodejs,tailwind,npm,git,html,css,vercel,vscode" />
   </a>
 </p>
 
-<h2 id="sobre" align="center">🎮Sobre o projeto</h2>
+<h2 id="sobre" align="center">Site-Giovanna</h2>
 
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
-<p>Bem-vindo ao repositório do meu site de portfólio pessoal! Este projeto exibe minhas habilidades e projetos como desenvolvedor frontend. Foi construído com Next.js, Tailwind CSS e outras tecnologias modernas da web.</p>
+<p>Este projeto é um site moderno e responsivo para uma clínica de estética, criado com <strong>Next.js</strong> e diversas bibliotecas para animações e otimização de interface. </p>
 
 <h2 align="center">📦 Funcionalidades</h2>
 <ul>
@@ -31,35 +31,36 @@
   <li>Componentes Otimizados: Utilização de Image e Link para otimização de carregamento de imagens e navegação.</li>
   <li>Componentes Interativos: Inclui animações e elementos interativos.</li>
   <li>UI Moderna: Utiliza Tailwind CSS para um visual limpo e moderno.</li>
-  <li>Navegação Fácil: Rolagem suave e seções bem organizadas.</li>
+  <li><strong>Página de Contato:</strong> Informações sobre endereço, WhatsApp e e-mail, além de formulário funcional.</li>
+  <li><strong>Serviços:</strong> Lista de tratamentos com botões para contato direto via WhatsApp.</li>
+
 </ul>
 
 <h2 align="center" id="layout">Layout</h2>
 <p align="center">
-    <img src="https://github.com/kaiovinic/my-portfolio/blob/main/public/images/meu-portifolio.png" alt="Tela 01" width="400px">
+    <img src="https://github.com/kaiovinic/site-giovanna/blob/main/public/tela01.png" alt="Tela 01" width="400px">
 </p>
 <p align="center">
-    <img src="https://github.com/kaiovinic/my-portfolio/blob/main/public/images/meu-portifolio02.png" alt="Tela 02" width="400px">
+    <img src="https://github.com/kaiovinic/site-giovanna/blob/main/public/tela02.png" alt="Tela 02" width="400px">
 </p>
 <p align="center">
-    <img src="https://github.com/kaiovinic/my-portfolio/blob/main/public/images/meu-portfolio03.png" alt="Tela 03" width="400px">
+    <img src="https://github.com/kaiovinic/site-giovanna/blob/main/public/tela03.png" alt="Tela 03" width="400px">
 </p>
 <p align="center">
-    <img src="https://github.com/kaiovinic/my-portfolio/blob/main/public/images/meu-portfolio04.png" alt="Tela 04" width="400px">
+    <img src="https://github.com/kaiovinic/site-giovanna/blob/main/public/tela04.png" alt="Tela 04" width="400px">
 </p>
 
 <h2 align="center" id="tecnologias">🛠️Tecnologias utilizadas</h2>
 <h3>Frontend</h3>
 <ul>
-  <li>TypeScript: Superset do JavaScript que adiciona tipagem estática ao código.</li>
-  <li>Next.js: Framework React para desenvolvimento de aplicações web modernas e rápidas.</li>
-  <li>React: Uma biblioteca JavaScript para construção de interfaces de usuário.</li>
-  <li>@heroicons/react: Um conjunto de ícones SVG para React.</li>
-  <li>react-tsparticles: Biblioteca para criar animações de partículas interativas.</li>
-  <li>react-type-animation: Componente React para animação de texto.</li>
-  <li>react-scroll: Biblioteca para rolagem suave e navegação em páginas.</li>
-  <li>AOS: Biblioteca Animate On Scroll para animações de rolagem.</li>
- <li>react-multi-carousel: Biblioteca para criar carrosséis responsivos e personalizados.</li>
+ <li>React: Uma biblioteca JavaScript para construção de interfaces de usuário.</li>
+ <li><strong>Next.js:</strong> Framework React para aplicações web rápidas e escaláveis.</li>
+ <li><strong>Framer Motion:</strong> Animações suaves e interativas.</li>
+ <li><strong>Tailwind CSS:</strong> Estilização moderna e flexível.</li>
+ <li><strong>React Icons:</strong> Ícones vetoriais para melhorar a interface.</li>
+ <li><strong>EmailJS:</strong> Envio de e-mails diretamente pelo formulário de contato.</li>
+ <li><strong>shadcn-ui:</strong> Componentes estilizados e reutilizáveis para construção de UI.</li>
+ <li><strong>Context API:</strong> Gerenciamento de estado para funcionalidades específicas.</li>
 </ul>
 
 <h3>Implantação em produção</h3>
@@ -75,7 +76,7 @@
 
 ```bash
 # Clonar repositório
-git clone https://github.com/kaiovinic/my-portfolio.git
+git clone https://github.com/kaiovinic/site-giovanna.git
 
 # Instalar dependências
 npm install
@@ -85,7 +86,13 @@ npm run dev
 ```
 
 <h2 " align="center">💡Aprendizado</h2>
-<p>Este projeto me permitiu aprimorar minhas habilidades em Next.js, React, TypeScript e Tailwind CSS. Aprendi a integrar várias bibliotecas e tecnologias modernas, diversas bibliotecas React para criar uma interface de usuário responsiva e interativa. Trabalhei com a passagem de dados e gerenciamento de estado entre componentes, melhorando a fluidez e a dinâmica da aplicação. Experimentei a personalização de carrosséis e animações, o que ajudou a otimizar o desempenho e a experiência do usuário.</p>
+<ul>
+    <li>Integração de formulários com o <strong>EmailJS</strong> para envio de mensagens sem backend.</li>
+    <li>Uso avançado de <strong>Framer Motion</strong> para animações suaves e transições de páginas.</li>
+    <li>Implementação de estilização responsiva e moderna com <strong>Tailwind CSS</strong> e <strong>shadcn-ui</strong>.</li>
+    <li>Gerenciamento de estado global com <strong>Context API</strong> para melhorar a funcionalidade.</li>
+    <li>Criação de uma experiência de usuário interativa e fluida com efeitos dinâmicos.</li>
+</ul>
 
 <h2 align="center" id="autor">Autor</h2>
 <h3 align="center">Kaio Vinicius</h3>

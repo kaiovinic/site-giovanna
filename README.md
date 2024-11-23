@@ -1,7 +1,7 @@
 [PROJECT__URL]:https://my-portfolio-xi-eight-43.vercel.app/
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 
-<h1 align="center" style="font-weight: bold;">My Portfólio</h1>
+<h1 align="center" style="font-weight: bold;">Site-Giovanna</h1>
 <p align="center">
  <a href="#sobre">Sobre</a> • 
  <a href="#layout">Layout</a> • 
@@ -19,7 +19,7 @@
   </a>
 </p>
 
-<h2 id="sobre" align="center">Site-Giovanna</h2>
+<h2 id="sobre" align="center">Sobre</h2>
 
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
